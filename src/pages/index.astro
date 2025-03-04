@@ -9,7 +9,7 @@ import Layout from '../layouts/Layout.astro';
 <Layout>
 	<a href="/page2">Go to page 2</a>
 
-    <h2>カウンター</h2>
+    <h2>画面遷移してもカウンターはそのまま</h2>
     <Counter client:load transition:persist="counter"/>
 
 	<h2>videoの場合はページ遷移で再生が止まるのを避けられる</h2>
