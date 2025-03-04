@@ -1,0 +1,18 @@
+---
+import Counter from '../components/Counter';
+import Layout from '../layouts/Layout.astro';
+
+// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
+// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+---
+
+<Layout>
+	<a href="/">Go to index</a>
+
+    <h2>何もないページ</h2>
+	<div style="display: none">
+		<div transition:persist="counter"></div>
+		<div transition:persist="media-player"></div>
+		<div transition:persist="youtube"></div>
+	</div>
+</Layout>
