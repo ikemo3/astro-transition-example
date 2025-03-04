@@ -1,4 +1,5 @@
 ---
+import Counter from '../components/Counter';
 import Layout from '../layouts/Layout.astro';
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
@@ -7,6 +8,9 @@ import Layout from '../layouts/Layout.astro';
 
 <Layout>
 	<a href="/page2">Go to page 2</a>
+
+    <h2>カウンター</h2>
+    <Counter client:load transition:persist="counter"/>
 
 	<h2>videoの場合はページ遷移で再生が止まるのを避けられる</h2>
 	<video controls="" autoplay="" transition:persist="media-player">
